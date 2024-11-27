@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
   return res.render('index.ejs')
 })
 
-const server = http.createServer(app).listen(3000, () => {
-  console.log('http://localhost:3000')
+const server = http.createServer(app).listen(8000, () => {
+  console.log('http://localhost:8000')
 })
 const io = socketIo(server)
 io.on('connection', (socket) => {
